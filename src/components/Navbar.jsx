@@ -15,7 +15,7 @@ const Navbar = () => {
             <div>
                 <h1 className="text-2xl font-semibold">
                     <Link to="/" className="text-2xl text-primary font-poppins">
-                        Global Learning 360
+                        Globallearning360
                     </Link>
                 </h1>
             </div>
