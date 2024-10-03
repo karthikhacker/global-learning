@@ -7,10 +7,11 @@ import CourseDetails from './pages/CourseDetails'
 import OurServices from './pages/OurServices';
 import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
+import Chat from './assets/images/chat.png'
 
 const App = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white relative'>
       <Router>
         <Navbar />
         <Routes>
@@ -22,6 +23,9 @@ const App = () => {
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
+        <div className="absolute bottom-8 right-8 cursor-pointer">
+          <img src={Chat} className="w-10 h-10" alt="chat" />
+        </div>
       </Router>
     </div>
   )
